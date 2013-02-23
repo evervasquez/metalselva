@@ -70,15 +70,16 @@
 	<h1>Welcome to CodeIgniter!</h1>
 
 	<div id="body">
-		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<code>application/views/welcome_message.php</code>
-
-		<p>The corresponding controller for this page is found at:</p>
-		<code>application/controllers/welcome.php</code>
-
-		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
+            <p><?php echo $nombre; ?></p>
+            <p><?php echo $twitter ?></p>
+            <p>Insertar Usuario</p>
+            
+            <form id="form" action="<?php echo base_url()?>index.php/users/addUser" method="POST">
+                <p>Nombre:<input name="name" id="name" type="text"></p>
+                <p>Apellido:<input name="lastName" id="lastName" type="text"></p>
+                <p>Twitter:<input name="twitter" id="twitter" type="text"></p>
+                <p><input value="Guardar Usuario" id="save" type="submit"></p>
+            </form>
 	</div>
 
 	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds</p>

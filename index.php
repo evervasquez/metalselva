@@ -18,6 +18,12 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
+//cuando es en producción cambiamos a production para que no
+//nos muestre los errores
+//      ambiente de production
+        //define('ENVIRONMENT', 'production');
+        
+//      ambiente de desarrollo
 	define('ENVIRONMENT', 'development');
 /*
  *---------------------------------------------------------------

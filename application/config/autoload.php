@@ -1,7 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /*
 | -------------------------------------------------------------------
-| AUTO-LOADER
+| AUTO-LOADER(cargar cosas al inicio)
 | -------------------------------------------------------------------
 | This file specifies which systems should be loaded by default.
 |
@@ -24,7 +24,7 @@
 | 4. Custom config files
 | 5. Language files
 | 6. Models
-|
+|cargar librerias por defecto
 */
 
 /*
@@ -52,7 +52,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('database');
 
 
 /*
@@ -64,7 +64,7 @@ $autoload['libraries'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array();
+$autoload['helper'] = array('url');
 
 
 /*
